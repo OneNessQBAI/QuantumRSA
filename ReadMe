@@ -1,0 +1,60 @@
+README
+Quantum RSA Hybrid Encryption Program
+Quantum RSA Hybrid Encryption is an advanced cryptographic program leveraging quantum computing principles for enhanced security. This implementation introduces quantum mechanics' benefits, such as superposition and entanglement, to RSA encryption, providing superior security over classical RSA algorithms.
+
+Description
+Overview
+The Quantum RSA Hybrid Encryption Program uses quantum algorithms to enhance traditional RSA encryption methods. By leveraging quantum superposition and entanglement, this program generates highly secure public and private keys, increasing the difficulty for potential attackers to decrypt the data without authorization.
+
+Key Features
+Quantum Superposition: This implementation uses quantum superposition, allowing a quantum bit (qubit) to be in multiple states simultaneously. This feature enables the generation of highly complex, unpredictable keys that are much harder to factor than classical keys.
+
+Quantum Entanglement: Entanglement allows for instantaneous state changes between qubits, regardless of the distance between them. In this program, entanglement enhances security by linking key generation and encryption processes in ways that make unauthorized access more detectable and difficult.
+
+Security Enhancement: Quantum-enhanced encryption significantly improves security by increasing the complexity of the keyspace and reducing the probability of successful brute-force attacks. The quantum-enhanced keys offer a higher level of encryption security compared to classical RSA keys of the same length.
+
+Hybrid Approach: This program seamlessly integrates quantum-generated randomness with classical RSA encryption, ensuring compatibility with existing systems while providing quantum-level security.
+
+Commands and Usage
+To use the Quantum RSA Hybrid Encryption Program, follow these steps:
+
+Create Python Environment:
+
+bash
+Copy code
+python -m venv myenv
+Activate Python Environment:
+
+Windows:
+bash
+Copy code
+myenv\Scripts\activate
+macOS/Linux:
+bash
+Copy code
+source myenv/bin/activate
+Install Dependencies:
+
+bash
+Copy code
+pip install cirq
+Generate Public and Private Keys:
+
+bash
+Copy code
+python Qkeygen.py
+This command will generate and display a public and private key pair using quantum randomness and entanglement.
+
+Encrypt a Message:
+
+bash
+Copy code
+python encrypt.py
+This script will prompt you to enter the public key and the message you wish to encrypt. The program uses quantum-enhanced encryption to encode the message.
+
+Decrypt a Message:
+
+bash
+Copy code
+python decrypt.py
+This script will prompt you to enter the private key and the encrypted message. It will then decrypt the message using the quantum-enhanced decryption process.
